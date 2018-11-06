@@ -707,6 +707,44 @@ h2,
 .work__subtitle {
   display: none;
 }
+.work__slide {
+  border: 5px solid #fff;
+}
+.work__slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.work__gallery {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.work__thumb {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  width: 100px;
+  border: 5px solid #fff;
+}
+.work__thumb--active {
+  border-color: #ffed00;
+}
+.work__thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .benefits {
   padding: 40px 10px;
   padding-bottom: 25px;
