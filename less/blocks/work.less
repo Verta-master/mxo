@@ -7,3 +7,40 @@
 .work__subtitle {
   display: none;
 }
+
+.work__slide {
+  border: 5px solid #fff;
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.work__gallery {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__thumb {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  width: 100px;
+  border: 5px solid #fff;
+  
+  &--active {
+    border-color: @yellow;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
