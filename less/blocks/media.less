@@ -1,3 +1,9 @@
+@media (min-width: 360px) {
+  .map--contacts .map__info {
+    max-width: none;
+  }
+}
+
 @media (min-width: 700px) {
   .work__slider {
     width: 525px;
@@ -80,6 +86,35 @@
       margin-top: 25px;
     }
   }
+  .map--contacts {
+    margin-bottom: 60px;
+    padding-top: 0;
+    
+    .map__info {
+      position: static;
+      width: 100%;
+      max-width: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .social,
+    .map__phone {
+      margin-top: 0;
+    }
+    .map__mail {
+      margin: 0;
+      order: 2;
+    }
+    .map__social {
+      display: flex;
+      flex-direction: column;
+    }
+    .social {
+      order: 1;
+      padding-left: 15px;
+    }
+  }
   .map__info .title-2 {
     font-size: 30px;
     margin-bottom: 30px;
@@ -87,6 +122,12 @@
   .map__mail {
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 95px;
   }
 }
 
@@ -344,6 +385,18 @@
     height: 143px;
     min-height: 143px;
     margin-bottom: 25px;
+  }
+  .map__frame {
+    min-height: 640px;
+    
+    iframe {
+      height: 640px;
+    }
+  }
+  .map--contacts .map__info {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 40px;
   }
 }
 
