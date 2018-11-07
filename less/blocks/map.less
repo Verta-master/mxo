@@ -1,21 +1,33 @@
 .map__frame {
   width: 100%;
-  height: 550px;
+  min-height: 550px;
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
+  iframe {
+    display: block;
+    width: 100%;
+    height: 550px;
+    border: 0;
+  }
 }
 
 .map__info {
-  padding: 40px 30px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 35px 30px;
   
   .title-2 {
+    margin-bottom: 20px;
     text-align: left;
   }
   
   address {
     font-size: 18px;
+    line-height: 1.5;
   }
   
   span {
@@ -24,20 +36,20 @@
   }
   
   .social {
-    margin-top: 40px;
+    margin-top: 30px;
     justify-content: flex-start;
     
     li {
       margin-left: 0;
-      margin-right: 25px;
+      margin-right: 27px;
     }
   }
 }
 
 .map__mail {
   display: block;
-  margin-top: 35px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 22px;
   font-family: "Lora", "Arial", sans-serif;
   color: #c5bb1e;
   font-size: 18px;
