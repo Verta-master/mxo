@@ -473,6 +473,9 @@ h2,
   margin-left: auto;
   margin-right: auto;
 }
+.content {
+  background-color: #f3f1ef;
+}
 .logo img {
   width: 56px;
   height: auto;
@@ -480,6 +483,8 @@ h2,
 .header {
   position: relative;
   background-color: #fff;
+  -webkit-box-shadow: 0px 8px 10px 0px rgba(31, 31, 31, 0.11);
+          box-shadow: 0px 8px 10px 0px rgba(31, 31, 31, 0.11);
 }
 .header__wrap {
   display: -webkit-box;
@@ -514,9 +519,13 @@ h2,
 .header__link:active {
   text-decoration: none;
 }
+.logo {
+  display: block;
+}
 .menu__wrap {
   display: none;
   position: absolute;
+  z-index: 10;
   top: 100%;
   left: 0;
   right: 0;
@@ -976,6 +985,74 @@ h2,
   font-size: 24px;
   line-height: 30px;
 }
+.team {
+  padding: 5px;
+  padding-top: 15px;
+  color: #1f2d58;
+}
+.team h1 {
+  padding-left: 25px;
+  margin-bottom: 35px;
+}
+.team__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.form {
+  padding-bottom: 25px;
+}
+.form .title-2 {
+  margin-bottom: 38px;
+  text-align: left;
+}
+.form__wrap {
+  padding: 47px 30px;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+.form__input,
+.form__message {
+  display: block;
+  width: 100%;
+  margin-bottom: 17px;
+  border: 1px solid rgba(134, 131, 130, 0.34);
+  background-color: #fbfbfb;
+}
+.form__input::-webkit-input-placeholder,
+.form__message::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #000;
+}
+.form__input::-ms-input-placeholder,
+.form__message::-ms-input-placeholder {
+  opacity: 0.5;
+  color: #000;
+}
+.form__input::placeholder,
+.form__message::placeholder {
+  opacity: 0.5;
+  color: #000;
+}
+.form__input {
+  height: 62px;
+  padding: 0 20px;
+}
+.form__message {
+  padding: 15px 20px;
+  height: 254px;
+  min-height: 254px;
+  margin-bottom: 30px;
+}
+.form__btn {
+  width: 100%;
+  border-radius: 0;
+}
+.form__main {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 700px) {
   .work__slider {
     width: 525px;
@@ -1140,6 +1217,45 @@ h2,
     left: 40px;
     padding-top: 30px;
   }
+  .team h1 {
+    padding-left: 0;
+  }
+  .team {
+    padding-bottom: 40px;
+  }
+  .form {
+    padding-bottom: 50px;
+  }
+  .form .title-2 {
+    margin-bottom: 28px;
+  }
+  .form__wrap {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  .form__main {
+    margin: 0;
+    max-width: none;
+  }
+  .form__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form__input {
+    width: 32%;
+  }
+  .form__btn {
+    max-width: 216px;
+  }
 }
 @media (min-width: 1260px) {
   .wrapper-columns {
@@ -1156,6 +1272,8 @@ h2,
   }
   .header {
     width: 315px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .content {
     width: 945px;
@@ -1298,6 +1416,14 @@ h2,
   .about__item p {
     margin-left: 0;
     margin-right: 0;
+  }
+  .team {
+    padding-top: 5px;
+  }
+  .form__message {
+    height: 143px;
+    min-height: 143px;
+    margin-bottom: 25px;
   }
 }
 @media (min-width: 1300px) {
