@@ -874,6 +874,7 @@ h2,
   color: #fff;
   text-align: center;
   background-color: #323441;
+  overflow: hidden;
 }
 .about .title-3 {
   color: #fff;
