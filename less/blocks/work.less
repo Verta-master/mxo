@@ -8,40 +8,24 @@
   display: none;
 }
 
-.work__slide {
+.fotorama__stage {
   border: 5px solid #fff;
-  
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
 }
 
-.work__gallery {
+.fotorama__thumb-border {
+  display: none;
+}
+
+.fotorama__nav__frame {
+  margin-right: 20px;
+  padding: 0 !important;
+  border: 5px solid #fff;
+}
+
+.fotorama__nav__frame .fotorama__nav__frame--thumb .fotorama__active {
+  border: 5px solid @yellow;
+}
+
+.fotorama__nav-wrap {
   margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.work__thumb {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-bottom: 10px;
-  width: 100px;
-  border: 5px solid #fff;
-  
-  &--active {
-    border-color: @yellow;
-  }
-  
-  img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
 }

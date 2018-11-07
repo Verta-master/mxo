@@ -1,6 +1,6 @@
 @media (min-width: 700px) {
   .work__slider {
-    width: 650px;
+    width: 525px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -24,7 +24,7 @@
     width: 49%;
   }
   .info {
-    background-image: url(../img/bg-3.jpg);
+    background-image: url(../img/bg-3.png);
     
     p {
       max-width: 520px;
@@ -75,9 +75,18 @@
     margin: 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 0px 15px 0px rgba(0, 0, 0, 0.05);
+    
+    .social {
+      margin-top: 25px;
+    }
   }
   .map__info .title-2 {
     font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .map__mail {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -87,7 +96,7 @@
     padding-right: 75px;
   }
   .promo {
-    padding-top: 75px;
+    padding-top: 78px;
     padding-left: 0;
     padding-right: 0;
     text-align: left;
@@ -98,41 +107,43 @@
     align-items: center;
     
     i {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 15px;
+      margin-right: 15px;
     }
   }
   .work {
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
   .benefits {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 85px;
+    padding-top: 75px;
     padding-bottom: 60px;
   }
   .service {
-    padding-top: 70px;
+    padding-top: 60px;
+    padding-bottom: 55px;
   }
   .info {
     padding: 0;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 35px;
   }
   .about {
     padding: 0;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 30px;
   }
   .map__info {
     left: 40px;
+    padding-top: 30px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1260px) {
   .wrapper-columns {
-    width: 1280px;
+    width: 1260px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -141,12 +152,12 @@
     width: 315px;
   }
   .content {
-    width: 965px;
+    width: 945px;
   }
   .header__wrap {
     display: block;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   .logo {
     text-align: center;
@@ -162,7 +173,11 @@
   }
   .menu__wrap {
     display: block;
+    padding-top: 25px;
     padding-left: 60px;
+  }
+  .menu__list {
+    margin-bottom: 55px;
   }
   .menu__time,
   .menu__phone,
@@ -177,17 +192,21 @@
     
     li {
       margin-left: 0;
-      margin-right: 30px;
+      margin-right: 28px;
     }
   }
   .promo__btns {
-    margin-top: 120px;
+    margin-top: 115px;
   }
   .promo {
     min-height: 770px;
+    
+    h1 {
+      margin-bottom: 25px;
+    }
   }
   .promo__logo {
-    margin-bottom: 85px;
+    margin-bottom: 75px;
   }
   .work__subtitle {
     display: block;
@@ -196,12 +215,14 @@
   }
   .work {
     position: relative;
+    z-index: 2;
     overflow: hidden;
     
     &::before,
     &::after {
       content: "";
       position: absolute;
+      z-index: -1;
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -215,8 +236,8 @@
     }
     
     &::after {
-      left: -75px;
-      bottom: 100px;
+      left: -85px;
+      bottom: 170px;
       width: 295px;
       height: 313px;
       background-image: url(../img/deco-2.png);
@@ -232,6 +253,9 @@
   }
   .benefits__item {
     width: 33%;
+  }
+  .service__list {
+    margin-top: 48px;
   }
   .service__item {
     border: 6px solid #fff;
@@ -256,12 +280,35 @@
       top: 0;
       right: 0;
       bottom: 0;
-      width: 102%;
-      background-image: url(../img/bg-3.jpg);
+      width: 101%;
+      background-image: url(../img/bg-3.png);
       background-repeat: no-repeat;
       background-size: cover;
-      border-bottom: 4px solid rgb(68, 49, 34);
-      box-shadow: 0px 12px 18px 0px rgba(31, 8, 5, 0.52);
     }
+  }
+  .fotorama__nav-wrap {
+    margin-top: 25px;
+  }
+  .benefits__img {
+    text-align: left;
+  }
+  .about__list {
+    margin-top: 55px;
+  }
+  .about__item {
+    margin-bottom: 55px;
+  }
+  .about__item p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .wrapper-columns {
+    width: 1280px;
+  }
+  .content {
+    width: 965px;
   }
 }
