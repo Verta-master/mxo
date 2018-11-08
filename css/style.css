@@ -481,6 +481,17 @@ h2,
 .content {
   background-color: #f3f1ef;
 }
+.link-back {
+  font-size: 16px;
+}
+.link-back span {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.link-back:hover,
+.link-back:active {
+  color: #ffed00;
+}
 .logo img {
   width: 56px;
   height: auto;
@@ -1251,6 +1262,45 @@ h2,
   font-weight: 700;
   line-height: 1.2;
 }
+.article .delivery__list {
+  padding-top: 60px;
+  padding-bottom: 10px;
+  margin-top: 0;
+  color: #fff;
+  background-color: #252936;
+}
+.article__wrap {
+  padding: 20px 30px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: #252936;
+  background-image: url(../img/bg-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.article__wrap h1 {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.text {
+  padding: 20px 30px;
+  padding-bottom: 40px;
+  line-height: 30px;
+}
+.text__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.text__slider {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 @media (min-width: 360px) {
   .map--address .map__info,
   .map--contacts .map__info {
@@ -1474,6 +1524,31 @@ h2,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .article__wrap {
+    padding-left: 0;
+    padding-right: 0;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .article {
+    background-image: url(../img/bg-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .article .delivery__list {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .text__slider .title-2 {
+    display: none;
   }
 }
 @media (min-width: 1000px) {
@@ -1789,6 +1864,28 @@ h2,
   }
   .delivery__item:nth-child(3n) {
     margin-right: 0;
+  }
+  .article__wrap {
+    max-width: 760px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .article__wrap h1 {
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+  .link-back {
+    font-size: 14px;
+    margin-left: -20px;
+  }
+  .article {
+    padding-bottom: 30px;
+  }
+  .article .delivery__item {
+    margin-bottom: 0;
+  }
+  .text p {
+    max-width: 760px;
   }
 }
 @media (min-width: 1300px) {
