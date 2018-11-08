@@ -964,6 +964,46 @@ h2,
 .map--contacts .map__mail {
   color: #fff;
 }
+.map--address {
+  padding-top: 15px;
+  padding-bottom: 17px;
+}
+.map--address h1 {
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+.map--address .map__info {
+  padding: 30px;
+  padding-right: 50px;
+  color: #fff;
+  background-color: #1f2d58;
+}
+.map--address .map__metro {
+  font-size: 16px;
+}
+.map--address .map__phone {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 30px;
+  margin-left: 0;
+  margin-top: 20px;
+}
+.map__metro {
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+}
+.map__metro::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/metro.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .map__frame {
   width: 100%;
   min-height: 550px;
@@ -1109,6 +1149,7 @@ h2,
   background-size: cover;
 }
 @media (min-width: 360px) {
+  .map--address .map__info,
   .map--contacts .map__info {
     max-width: none;
   }
@@ -1213,6 +1254,23 @@ h2,
   }
   .map__info .social {
     margin-top: 25px;
+  }
+  .map--address .map__info {
+    position: static;
+    width: 100%;
+    max-width: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .map--address .map__phone {
+    margin-top: 0;
   }
   .map--contacts {
     margin-bottom: 60px;
@@ -1544,6 +1602,28 @@ h2,
     padding-left: 75px;
     padding-right: 75px;
     padding-bottom: 40px;
+  }
+  .map--address {
+    padding-bottom: 0;
+    padding-top: 5px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-bottom: 40px;
+  }
+  .map--address h1 {
+    padding-left: 0;
+    margin-bottom: 35px;
+  }
+  .map--address .map__info {
+    padding: 25px 30px;
+  }
+  .map--address .map__frame {
+    border: 15px solid #fff;
+    border-bottom: 0;
+    min-height: 375px;
+  }
+  .map--address .map__frame iframe {
+    height: 375px;
   }
 }
 @media (min-width: 1300px) {
