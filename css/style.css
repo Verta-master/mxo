@@ -821,6 +821,9 @@ h2,
   padding-bottom: 70px;
   background-color: #f3f1ef;
 }
+.service h1 {
+  padding-left: 30px;
+}
 .service__list {
   margin: 0;
   padding: 0;
@@ -843,6 +846,8 @@ h2,
   position: relative;
 }
 .service__img {
+  height: 240px;
+  overflow: hidden;
   border: 6px solid #fff;
 }
 .service__img img {
@@ -1549,6 +1554,10 @@ h2,
   }
   .text__slider .title-2 {
     display: none;
+  }
+  .service h1 {
+    padding-left: 0;
+    margin-top: 0;
   }
 }
 @media (min-width: 1000px) {
