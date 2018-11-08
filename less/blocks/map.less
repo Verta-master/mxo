@@ -25,6 +25,50 @@
       color: #fff;
     }
   }
+  
+  &--address {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    
+    h1 {
+      padding-left: 30px;
+      margin-bottom: 25px;
+    }
+    .map__info {
+      padding: 30px;
+      padding-right: 50px;
+      color: #fff;
+      background-color: @blue;
+    }
+    .map__metro {
+      font-size: 16px;
+    }
+    .map__phone {
+      font-size: 16px;
+      font-weight: 700;
+      padding-left: 30px;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+
+.map__metro {
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/metro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .map__frame {
