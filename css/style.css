@@ -1160,6 +1160,39 @@ h2,
   margin-left: auto;
   margin-right: auto;
 }
+.form__checkbox {
+  display: none;
+}
+.form__label {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.form__label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(134, 131, 130, 0.34);
+  background-color: #fbfbfb;
+}
+.form__label::after {
+  display: none;
+  content: "\2714";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1f2d58;
+  font-size: 24px;
+  line-height: 1;
+}
+.form__checkbox:checked + .form__label::after {
+  display: block;
+}
 .contacts {
   padding-top: 30px;
 }
