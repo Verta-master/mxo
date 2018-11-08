@@ -1175,6 +1175,49 @@ h2,
   background-position: center;
   background-size: cover;
 }
+.company {
+  padding-top: 20px;
+  padding-bottom: 32px;
+  padding-left: 30px;
+  padding-right: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.9;
+  background-image: url(../img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.company h1 {
+  color: #fff;
+}
+.delivery {
+  padding-top: 32px;
+  padding-bottom: 15px;
+}
+.delivery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 60px;
+}
+.delivery__item {
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center;
+  line-height: 1.9;
+}
+.delivery__title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
 @media (min-width: 360px) {
   .map--address .map__info,
   .map--contacts .map__info {
@@ -1371,6 +1414,33 @@ h2,
   }
   .team__item {
     width: 49%;
+  }
+  .delivery__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .delivery__item {
+    text-align: left;
+    margin-right: 20px;
+  }
+  .delivery__img {
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (min-width: 1000px) {
@@ -1667,6 +1737,25 @@ h2,
   }
   .map--address .map__frame iframe {
     height: 375px;
+  }
+  .company,
+  .delivery__list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .company {
+    padding-top: 40px;
+    padding-bottom: 65px;
+  }
+  .delivery {
+    padding-top: 55px;
+    padding-bottom: 5px;
+  }
+  .delivery__item {
+    margin-right: 30px;
+  }
+  .delivery__item:nth-child(3n) {
+    margin-right: 0;
   }
 }
 @media (min-width: 1300px) {
