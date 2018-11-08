@@ -1079,6 +1079,33 @@ h2,
   height: auto;
   display: block;
 }
+.team__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.team__item {
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+}
+.team__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.team__item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .form {
   padding-bottom: 25px;
 }
@@ -1328,6 +1355,22 @@ h2,
     top: 0;
     left: 0;
     padding-left: 95px;
+  }
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team__item {
+    width: 49%;
   }
 }
 @media (min-width: 1000px) {
