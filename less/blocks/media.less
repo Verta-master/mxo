@@ -197,6 +197,23 @@
     padding-left: 0;
     margin-top: 0;
   }
+  .about__service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .about__point {
+    width: 25%;
+    text-align: left;
+    
+    p {
+      margin-left: 0;
+    }
+  }
+  .about__img {
+    height: 60px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -281,6 +298,9 @@
   }
   .form__btn {
     max-width: 216px;
+  }
+  .form--top {
+    margin-top: 55px;
   }
 }
 
@@ -415,7 +435,7 @@
   }
   .info {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     
     &:before {
       content: "";
