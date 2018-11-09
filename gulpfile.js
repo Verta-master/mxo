@@ -88,9 +88,9 @@ gulp.task("js:production", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*",
-    "img/*.{svg,png,jpg,gif}",
+    "img/*.{svg,png,jpg,gif,mp4}",
     "js/*.js",
-	"css/*.css",
+	  "css/*.css",
     "*.txt",
     "*.html"
   ], {
