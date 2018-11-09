@@ -1323,6 +1323,72 @@ h2,
   margin-top: 60px;
   margin-bottom: 60px;
 }
+.price {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+.price h1 {
+  padding-left: 30px;
+  padding-right: 25px;
+  margin-bottom: 35px;
+}
+.price__title {
+  margin-bottom: 18px;
+  padding-left: 30px;
+  padding-right: 25px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.price__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  line-height: 1.9;
+  border-bottom: 1px solid rgba(37, 40, 32, 0.102);
+}
+.price__line:last-child {
+  border-bottom: none;
+}
+.price__line:hover .price__name,
+.price__line:active .price__name {
+  background-color: #323441;
+  color: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.price__line:hover .price__sum,
+.price__line:active .price__sum {
+  background-color: #ffed00;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.price__name {
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 65%;
+  padding-right: 10px;
+}
+.price__sum {
+  margin: 0;
+  padding-right: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 35%;
+  text-align: right;
+  font-weight: 600;
+}
+.price__block {
+  margin-bottom: 45px;
+}
 @media (min-width: 360px) {
   .map--address .map__info,
   .map--contacts .map__info {
@@ -1695,6 +1761,38 @@ h2,
   }
   .form--top {
     margin-top: 55px;
+  }
+  .price__block {
+    width: 46%;
+  }
+  .price__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  .price {
+    padding-top: 5px;
+  }
+  .price h1 {
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+  .price__title,
+  .price__name {
+    padding-left: 5px;
+  }
+  .price__sum {
+    padding-right: 5px;
   }
 }
 @media (min-width: 1260px) {
